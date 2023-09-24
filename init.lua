@@ -1,0 +1,12 @@
+require("core.defaults")
+require("core.lazy")
+require("lazy").setup("plugins")
+require("core.keymaps")
+require("lualine").setup()
+require("core.plugin_configs")
+require("mason").setup()
+require("mason-lspconfig").setup()
+require("lspconfig").volar.setup{}
+require("lspconfig").emmet_language_server.setup{}
+require("core.cmp")
+require('mini.starter').setup({})
